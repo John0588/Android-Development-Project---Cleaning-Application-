@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.john.mrclean">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MRCLEAN">
+        <activity android:name=".Total_Page"></activity>
+        <activity android:name=".Profile_Cleaners" />
+        <activity android:name=".Niagara" />
+        <activity android:name=".Mississauga" />
+        <activity android:name=".Scarborough" />
+        <activity android:name=".Brampton" />
+        <activity android:name=".Send_Email" />
+        <activity android:name=".History2" />
+        <activity android:name=".Toronto" />
+        <activity android:name=".Notification" />
+        <activity android:name=".History" />
+        <activity android:name=".Reset_Password" />
+        <activity android:name=".Services" />
+        <activity android:name=".Booking" />
+        <activity android:name=".Home" />
+        <activity android:name=".SignIn" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".Main">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.SEARCH" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.SearchView"
+                android:resource="@layout/activity_booking" />
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

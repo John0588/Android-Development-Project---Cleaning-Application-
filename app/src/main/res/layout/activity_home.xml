@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <View
+        android:id="@+id/night_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/night_bg" />
+
+    <View
+        android:id="@+id/day_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/day_bg"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Switch
+        android:id="@+id/day_night_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Mode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/logo1"
+        android:layout_width="168dp"
+        android:layout_height="168dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/homeBooking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:contentDescription="TODO"
+        android:onClick="home_booking"
+        android:src="@drawable/ic_booking_foreground"
+        app:layout_constraintEnd_toStartOf="@+id/homeServices"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeStep1" />
+
+    <ImageView
+        android:id="@+id/homeServices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_services_foreground"
+        android:onClick="home_services"
+        app:layout_constraintBottom_toBottomOf="@+id/homeBooking"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/homeBooking"
+        app:layout_constraintTop_toTopOf="@+id/homeBooking" />
+
+    <TextView
+        android:id="@+id/textBooking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="25dp"
+        android:text="BOOKING"
+        app:layout_constraintEnd_toStartOf="@+id/textServices"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeBooking" />
+
+    <TextView
+        android:id="@+id/textServices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SERVICES"
+        app:layout_constraintBottom_toBottomOf="@+id/textBooking"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textBooking"
+        app:layout_constraintTop_toTopOf="@+id/textBooking" />
+
+    <ImageView
+        android:id="@+id/homeNotifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="home_notifications"
+        android:src="@drawable/ic_notifications_foreground"
+        app:layout_constraintEnd_toStartOf="@+id/homeHistory"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textBooking" />
+
+    <ImageView
+        android:id="@+id/homeHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_history_foreground"
+        android:onClick="home_history"
+        app:layout_constraintBottom_toBottomOf="@+id/homeNotifications"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/homeNotifications"
+        app:layout_constraintTop_toTopOf="@+id/homeNotifications" />
+
+    <TextView
+        android:id="@+id/textNotifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="30dp"
+        android:text="NOTIFICATIONS"
+        app:layout_constraintEnd_toStartOf="@+id/textHistory"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeNotifications" />
+
+    <TextView
+        android:id="@+id/textHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="HISTORY"
+        app:layout_constraintBottom_toBottomOf="@+id/textNotifications"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textNotifications"
+        app:layout_constraintTop_toTopOf="@+id/textNotifications" />
+
+    <TextView
+        android:id="@+id/homeStep1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:layout_marginEnd="25dp"
+        android:text="STEP 1"
+        app:layout_constraintEnd_toStartOf="@+id/homeStep2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/day_night_switch" />
+
+    <TextView
+        android:id="@+id/homeStep2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STEP 2"
+        app:layout_constraintBottom_toBottomOf="@+id/homeStep1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/homeStep1"
+        app:layout_constraintTop_toTopOf="@+id/homeStep1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

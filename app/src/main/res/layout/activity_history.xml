@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".History">
+
+    <View
+        android:id="@+id/night_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/night_bg" />
+
+
+    <View
+        android:id="@+id/day_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/day_bg"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Switch
+        android:id="@+id/day_night_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Mode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="373dp"
+        android:layout_height="139dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:padding="10sp"
+                android:text="We have built our company on a foundation of values – integrity, reliability, and honesty – delivering premium cleaning solutions to a large range of different sized businesses across many industries. Whether your own a small office, business with multiple locations, entire Commercial Office Buildings, Medical Building, Gyms/Fitness, Restaurants, plazas, multi-tenant venues, and high-rises. We provide flexible and customizable commercial cleaning services to commercial businesses across the Greater Toronto Area and surrounding regions.  Our team prides itself on delivering hassle-free solutions of the highest integrity and quality, providing our clients with the time to concentrate on their business. Our cleaning company has developed long-lasting relationships with many well-established companies and brands across the Greater Toronto Area, partnering with them to achieve their cleaning requirements and delivering a work and operating environment The team at the Star Team Cleaning company is committed to providing the highest quality Commercial Cleaning &amp; janitorial Services possible. We collaborate with our clients to understand their needs and create a comprehensive cleaning plan that not only addresses their needs but exceeds their expectations. Our Commercial Cleaning and Janitorial Services are available Monday through Sunday, 24 hours a day, all year around.  Cleaning might seem like an easy task, but every company needs a cleaning company they can trust. Star Team Cleaning is fully bonded, insured, and our team is supervised. We don’t mess around when it comes to our clients. As a trusted name in the cleaning industry, our clients are assured their business is safe, secure, clean, attractive, and healthy to work in!"
+                android:textAlignment="viewStart"
+                android:textColor="#121111" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="276dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="100dp"
+        android:fontFamily="@font/arvo_bold_italic"
+        android:gravity="center"
+        android:text="The MR. CLEAN Cleaning Company Services Ontario"
+        android:textColor="#EC0808"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="311dp"
+        android:layout_height="142dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:srcCompat="@drawable/cleaners" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="378dp"
+        android:layout_height="139dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/history2_Email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10sp"
+                android:text="The team at the Star Team Cleaning company is committed to providing the highest quality Commercial Cleaning and janitorial Services possible. We collaborate with our clients to understand their needs and create a comprehensive cleaning plan that not only addresses their needs but exceeds their expectations. Our Commercial Cleaning and Janitorial Services are available Monday through Sunday, 24 hours a day, all year around. Cleaning might seem like an easy task, but every company needs a cleaning company they can trust. Star Team Cleaning is fully bonded, insured, and our team is supervised. We don’t mess around when it comes to our clients. As a trusted name in the cleaning industry, our clients are assured their business is safe, secure, clean, attractive, and healthy to work in!"
+                android:textAlignment="textStart"
+                android:textColor="#121111" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="242dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/allerta"
+        android:gravity="center"
+        android:text="Delivering A Cleaner Clean!"
+        android:textColor="#E13030"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/button"
+        android:layout_width="41dp"
+        android:layout_height="25dp"
+        android:onClick="button"
+        android:src="@drawable/ic_arrow_foreground"
+        app:layout_constraintBottom_toBottomOf="@+id/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/logo"
+        app:layout_constraintTop_toTopOf="@+id/logo" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="53dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="200dp"
+        android:onClick="logo"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/day_night_switch"
+        app:srcCompat="@drawable/logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

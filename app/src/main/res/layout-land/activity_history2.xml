@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".History2">
+
+    <View
+        android:id="@+id/night_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/night_bg" />
+
+
+    <View
+        android:id="@+id/day_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/day_bg"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="88dp" />
+
+    <Switch
+        android:id="@+id/day_night_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Mode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="653dp"
+        android:layout_height="214dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/history2_CompanyName">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/history_History"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a congue augue. Sed lobortis sit amet nibh ut consectetur. Morbi vehicula consectetur dignissim. Praesent sed nisi sit amet erat vulputate imperdiet. Aenean pellentesque lorem erat, vel imperdiet sem convallis eget. Vivamus a bibendum dui. Sed condimentum ac dui et luctus. Donec arcu libero, bibendum quis lectus eget, hendrerit aliquam diam.
+
+Vestibulum neque elit, tristique vel mattis id, euismod non nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras pellentesque nec dolor placerat tincidunt. Vivamus tincidunt mollis hendrerit. Mauris erat dolor, accumsan sed commodo viverra, varius sit amet odio. Curabitur malesuada congue faucibus. Pellentesque lacinia nunc sapien, eget commodo tortor sollicitudin vitae. Etiam vitae pulvinar sapien, id faucibus erat. Duis id tempor felis. Praesent semper congue tincidunt. Nullam ultrices scelerisque pellentesque.
+
+Vivamus sem ante, pellentesque nec laoreet eget, scelerisque a nulla. Aenean ligula magna, ullamcorper eu blandit et, sollicitudin ut metus. Sed a arcu vehicula, pharetra enim quis, euismod felis. Morbi at vehicula lacus, vitae faucibus ante. Aenean vestibulum ultricies scelerisque. Quisque blandit neque at magna pharetra, at scelerisque ante vulputate. Vestibulum ut elit eget felis euismod consequat in dignissim leo. Suspendisse tempus nisl vulputate quam ullamcorper sagittis. Quisque ut porttitor ligula. Curabitur tortor lectus, pulvinar nec tempus at, viverra id arcu.
+
+Donec sit amet convallis lacus. Vestibulum rutrum ante hendrerit leo consequat, a pretium mauris commodo. Curabitur facilisis est sapien, vitae auctor urna mollis porta. Donec est enim, dignissim eu placerat sed, maximus nec nunc. Morbi a auctor augue. Cras sagittis, erat quis maximus porta, ligula eros tempor ligula, sed posuere augue lorem pulvinar nulla. Donec gravida molestie neque, quis facilisis ex efficitur a. Phasellus pellentesque malesuada dolor scelerisque egestas. Nulla facilisi.
+
+Proin eget congue quam, ut facilisis arcu. Suspendisse posuere, elit ut iaculis sodales, tellus libero commodo justo, vitae finibus nunc est id lectus. Phasellus vel cursus lectus. Maecenas a urna ornare, lacinia justo id, elementum ante. Duis lacus eros, mollis sit amet hendrerit sed, efficitur eget eros. Nullam consectetur, nisi blandit interdum iaculis, ante tortor vestibulum quam, at aliquam ipsum lacus a dui. Suspendisse potenti. Sed non mi neque."
+                android:textAlignment="textStart" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/history2_CompanyName"
+        android:layout_width="323dp"
+        android:layout_height="42dp"
+        android:fontFamily="@font/amita_bold"
+        android:gravity="center"
+        android:text="Company History"
+        android:textColor="#FD4A03"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo2" />
+
+    <ImageView
+        android:id="@+id/button2"
+        android:layout_width="44dp"
+        android:layout_height="41dp"
+        android:onClick="button2"
+        android:src="@drawable/ic_arrow_foreground"
+        app:layout_constraintBottom_toBottomOf="@+id/logo2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/logo2"
+        app:layout_constraintTop_toTopOf="@+id/logo2" />
+
+    <ImageView
+        android:id="@+id/logo2"
+        android:layout_width="44dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="500dp"
+        android:onClick="logo2"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/day_night_switch"
+        app:srcCompat="@drawable/logo" />
+    />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

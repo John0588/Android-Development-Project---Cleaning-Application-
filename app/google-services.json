@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "957606602437",
+    "project_id": "mr-clean-8efe9",
+    "storage_bucket": "mr-clean-8efe9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:957606602437:android:2e88004130af4abadcf2ac",
+        "android_client_info": {
+          "package_name": "com.john.mrclean"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "957606602437-kfboctdod198h1bfshtc55ms43ekj8v3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARDHuO777ZiV-YTS-8SP49MJxkgb4DvVA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "957606602437-kfboctdod198h1bfshtc55ms43ekj8v3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

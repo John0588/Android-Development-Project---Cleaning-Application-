@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Send_Email">
+
+    <View
+        android:id="@+id/night_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/night_bg" />
+
+
+    <View
+        android:id="@+id/day_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/day_bg"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Switch
+        android:id="@+id/day_night_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="400dp"
+        android:layout_marginTop="8dp"
+        android:text="Mode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/history2_FullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="520dp"
+        android:text="Full Name:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <EditText
+        android:id="@+id/history2FullName"
+        android:layout_width="650dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/edittext_background"
+        android:gravity="start"
+        android:padding="10dp"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/history2_FullName" />
+
+    <TextView
+        android:id="@+id/history2_Email"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="350dp"
+        android:text="Email:"
+        app:layout_constraintEnd_toStartOf="@+id/historyMessage"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/history2FullName" />
+
+    <EditText
+        android:id="@+id/history2Email"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="350dp"
+        android:background="@drawable/edittext_background"
+        android:gravity="start"
+        android:padding="10dp"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/history2_Email" />
+
+    <EditText
+        android:id="@+id/history2Message"
+        android:layout_width="309dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/edittext_background"
+        android:gravity="start"
+        android:padding="10dp"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/history2Subject"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/history2Subject"
+        app:layout_constraintTop_toTopOf="@+id/history2Subject" />
+
+    <TextView
+        android:id="@+id/history_Subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="530dp"
+        android:text="Subject:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/history2Email" />
+
+    <EditText
+        android:id="@+id/history2Subject"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/edittext_background"
+        android:gravity="start"
+        android:padding="10dp"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/history2Message"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/history_Subject" />
+
+    <TextView
+        android:id="@+id/historyMessage"
+        android:layout_width="115dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="3dp"
+        android:text="Your Message:"
+        app:layout_constraintBottom_toBottomOf="@+id/history2_Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/history2_Email"
+        app:layout_constraintTop_toTopOf="@+id/history2_Email" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="100dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/architects_daughter"
+        android:text="Contact Us!"
+        android:textColor="#F83A3A"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/day_night_switch" />
+
+    <Button
+        android:id="@+id/send_Email"
+        android:layout_width="81dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="450dp"
+        android:layout_marginTop="55dp"
+        android:gravity="center"
+        android:onClick="send"
+        android:text="SEND"
+        android:textColor="#FDFCFC"
+        app:backgroundTint="#070707"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/history2Subject" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/allerta"
+        android:text="Send us message..."
+        android:textColor="#E15252"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <ImageView
+        android:id="@+id/call"
+        android:layout_width="50dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="350dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="150dp"
+        android:onClick="call"
+        android:src="@drawable/ic_call_foreground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView15"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/night_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/send_Email" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="850dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:gravity="center"
+        android:text="Call Us!"
+        android:textColor="#ED588B"
+        app:layout_constraintBottom_toBottomOf="@+id/call"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/call"
+        app:layout_constraintTop_toTopOf="@+id/call" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="355dp"
+        android:gravity="center"
+        android:text="900 Kingston Road, Scarborough, Ontario, Canada, M1N 1R5"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/call" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="550dp"
+        android:text="1 800 389 0535"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
